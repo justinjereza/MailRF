@@ -8,3 +8,8 @@ If \_\_debug\_\_ == True, the daemon will listen on localhost port 8027, log to 
 The restrict.txt and secure.txt files must always be located in $WORKING_DIR. On SIGHUP, the daemon will re-initialize the e-mail address list using those two files. On SIGUSR1, the address list loaded in memory will be written to the log.
 
 An example of the data the daemon expects can be found in tests.py. To run the tests, execute "make test". The test will send data for processing to the daemon and print the response as well as print what would have been written to the log file. Running "make clean" removes the \_trial\_temp/ directory as well as *.py[co].
+
+Dependencies
+------------
+
+* Twisted
